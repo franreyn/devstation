@@ -1,0 +1,8 @@
+{
+  "name": "Global Workspace",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "customizations": {
+    "vscode": {}
+  },
+  "postCreateCommand": "mkdir -p ~/.ssh && echo \"$GLOBAL_SSH_KEY\" > ~/.ssh/id_ed25519 && chmod 600 ~/.ssh/id_ed25519 && ssh-keyscan github.com >> ~/.ssh/known_hosts"
+}
